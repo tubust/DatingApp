@@ -71,10 +71,5 @@ namespace DatingApp.API.Data
         {
             return await _context.Users.AnyAsync(x => x.Username == username);
         }
-
-        Task<User> IAuthRepository.Login(string username, string password)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
